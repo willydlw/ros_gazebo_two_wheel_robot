@@ -1,6 +1,15 @@
-# ros_gazebo_two_wheel_robot
-2 wheeled robot simulation using ros and gazebo
+# Differential Drive Robot Simulation Using ROS and Gazebo
 
+This learning unit uses ROS (Robot Operating System) features and tools to study the motion behavior of a two wheeled, differential drive, mobile robot. 
+
+
+Thank and acknowledge
+
+The Gazebo, Make a Mobie Robot tutorial, http://gazebosim.org/tutorials/?tut=build_robot, 
+
+
+The Construct, Exploring ROS using a 2 Wheeled Robot, https://www.theconstructsim.com/ros-projects-exploring-ros-using-2-wheeled-robot-part-1/
+</br></br>
 
 
 ### Test Environment
@@ -52,4 +61,6 @@ catkin_make
 ## Lessons
 
 ### Lesson 1 - Visualizing the robot with rviz
+
+### Lesson 2 - Simulating robot movement in an empty world
 

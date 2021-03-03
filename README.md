@@ -60,7 +60,7 @@ catkin_make
 ```
 ## Lessons
 
-### Lesson 1 - Visualizing the robot with rviz
+[Lesson 1 - Visualizing the robot with rviz](./lesson01.md)
 
-### Lesson 2 - Simulating robot movement in an empty world
+[Lesson 2 - Simulating robot movement in an empty world](./lesson01.md)
 

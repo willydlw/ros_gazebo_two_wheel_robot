@@ -24,7 +24,7 @@ The Construct, Exploring ROS using a 2 Wheeled Robot, https://www.theconstructsi
     .
     └── simulation_ws           # Simulation Workspace
         ├── src                 # Source files 
-        │   ├── robot_description       # Robot definition directory
+        │   ├── m2wr_description       # Robot definition directory
         |   |   ├── CMakeLists.txt
         |   |   ├── package.xml
         |   |   ├── launch              # launch files directory
@@ -62,5 +62,5 @@ catkin_make
 
 [Lesson 1 - Visualizing the robot with rviz](./lesson01.md)
 
-[Lesson 2 - Simulating robot movement in an empty world](./lesson01.md)
+[Lesson 2 - Simulating robot movement in an empty world](./lesson02.md)
 

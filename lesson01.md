@@ -10,7 +10,7 @@ The robot model consists of link elements, joint elements, and gazebo plugins. A
 
 The common properties specified for links and joints are inertial, collision, and visual. Inertial and collision properties enable physics simulation. The visual properties control the robot's appearance.
 
-A Gazebo plugin is a C++ library that is loaded by Gazebo at runtime. A plugin has access to Gazebo's API, which allows a plugin to perform a wide variety of tasks including moving objects, adding/removing objects, and accessing sensor data. There are six different [plugin types](http://gazebosim.org/tutorials?tut=plugins_hello_world&cat=write_plugin): (1) World, (2) Model, (3) Sensor, (4) System, (5) Visual, (6) GUI. 
+A Gazebo plugin is a C++ library that is loaded by Gazebo at runtime. A plugin has access to Gazebo's API, which allows a plugin to perform a wide variety of tasks including moving objects, adding/removing objects, and accessing sensor data. There are six different [plugin types](http://gazebosim.org/tutorials?tut=plugins_hello_world&cat=write_plugin): (1) World, (2) Model, (3) Sensor, (4) System, (5) Visual, (6) GUI.
 
 A differential drive model plugin controls robot motion and a sensor plugin provides a laser scanner.</br></br>
 
@@ -26,7 +26,7 @@ A differential drive model plugin controls robot motion and a sensor plugin prov
 - gazebo plugins
    - model plugin: differential drive
       - accepts velocity commands and publishes odometry information
-   - sensor plugin: hoyuko laser scanner 
+   - sensor plugin: hoyuko laser scanner
 </br></br>
 
 ![robot model](./images/lesson01/robot_model.png "robot model")</br></br>
@@ -35,15 +35,15 @@ A differential drive model plugin controls robot motion and a sensor plugin prov
 
 rviz is a 3D visualization software tool for robots, sensors, and algorithms. It provides a view of your robot model, captures sensor information from robot sensors, and replays captured data. It can display data from camera, lasers, from 3D and 2D devices including pictures and point clouds. rviz enables you to see the robot’s perception of its world (real or simulated).</br></br>
 
-Open a terminal and type the following.
+Open a terminal and navigate to the simulation workspace directory simulation_ws. Anytime we open a new terminal session or rebuild our code, we need to use the source command and setup.bash script to configure the environment. We use the roslaunch tool to start rviz using the launch file rviz.launch.
 
-```
-cd simulation_ws
+```bash
+cd ros_gazebo_two_wheel_robot/simulation_ws
 source ./devel/setup.bash
-roslaunch robot_description rviz.launch
+roslaunch m2wr_description rviz.launch
 ```
 
-Rviz will launch with a Fixed Frame global status error. </br></br>
+rviz will launch with an empty grid space and a Fixed Frame global status error, as shown below. </br></br>
 
 ![rviz global error](./images/lesson01/global_status_error.png "global status error")</br></br>
 

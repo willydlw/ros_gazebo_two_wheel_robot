@@ -40,24 +40,21 @@ The Construct, Exploring ROS using a 2 Wheeled Robot, https://www.theconstructsi
     
 ### Setup
 
-After downloading the files, navigate to the project folder
-```
-cd ros_gazebo_two_wheel_robot
-```
-Navigate to Catkin Workspace and run `catkin_make`
-```
-cd catkin_ws
+After downloading the files, open a terminal and navigate to the project folder ros_gazebo_two_wheel_robot. For example, if the project folder is stored in your home directory, use the command `cd ~/ros_gazebo_two_wheel_robot`.
+
+Next, we need to build code in the simulation_ws directory with the catkin_make command.
+
+Run the commands below to navigate to the simulation workspace directory, simulation_ws and use the catkin_make tool to build needed project code for the package named m2wr_description. 
+
+```bash
+cd ../simulation_ws
 catkin_make
 ```
-Return to the project folder 
-```
-cd ..
-```
-Navigate to Simulation Workspace and run `catkin_make`
-```
-cd simulation_ws
-catkin_make
-```
+
+After running catkin_make, you should notice two new folders in the root of your simulation workspace: the build and devel folders. The build folder is where cmake and make are invoked, and the devel folder contains any generated files and targets, plus setup.*sh files so that you can use it like it is installed.
+
+Now we are ready to work through this unit's lessons.</br></br>
+
 ## Lessons
 
 [Lesson 1 - Visualizing the robot with rviz](./lesson01.md)

@@ -47,7 +47,7 @@ Next, we need to build code in the simulation_ws directory with the catkin_make 
 Run the commands below to navigate to the simulation workspace directory, simulation_ws and use the catkin_make tool to build needed project code for the package named m2wr_description.
 
 ```bash
-cd ../simulation_ws
+cd simulation_ws
 catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```
 

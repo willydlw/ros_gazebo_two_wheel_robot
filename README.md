@@ -74,9 +74,9 @@ Now we are ready to work through this unit's lessons.</br></br>
 
 ## Lessons
 
-[Lesson 0 - Creating a Robot Model](./lesson00.md)
+[Lesson 0 - Creating a Robot Model](./lesson0/lesson0.md)
 
-[Lesson 1 - Visualizing the robot with rviz](./lesson01.md)
+[Lesson 1 - Visualizing the robot with rviz](./lesson1/lesson01.md)
 
-[Lesson 2 - Simulating robot movement in an empty world](./lesson02.md)
+[Lesson 2 - Simulating robot movement in an empty world](./lesson2/lesson2.md)
 

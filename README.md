@@ -1,11 +1,13 @@
 # Differential Drive Robot Simulation Using ROS and Gazebo
 
-This learning unit uses ROS (Robot Operating System) features and tools to study the motion behavior of a two wheeled, differential drive, mobile robot. 
+This learning unit uses ROS (Robot Operating System) features and tools to study the motion behavior of a two wheeled, differential drive, mobile robot.
+
+Objective: model a simple differential drive robot and configure it to navigate autonomously in a simulation environment.
 
 
 Thank and acknowledge
 
-The Gazebo, Make a Mobie Robot tutorial, http://gazebosim.org/tutorials/?tut=build_robot, 
+The Gazebo, Make a Mobile Robot tutorial, http://gazebosim.org/tutorials/?tut=build_robot, 
 
 
 The Construct, Exploring ROS using a 2 Wheeled Robot, https://www.theconstructsim.com/ros-projects-exploring-ros-using-2-wheeled-robot-part-1/
@@ -14,7 +16,9 @@ The Construct, Exploring ROS using a 2 Wheeled Robot, https://www.theconstructsi
 
 ### Test Environment
 
-- ROS: Melodic
+This project was developed and tested with the following software.
+
+- ROS: Melodic (Desktop Full Version)
 - Ubuntu: 18.04
 - Gazebo: 9.0.0
 - Python: 3.6.9
@@ -38,6 +42,19 @@ The Construct, Exploring ROS using a 2 Wheeled Robot, https://www.theconstructsi
         │   └── ...             # etc.
         └── build               # Compiled files
     
+
+### Terminology
+
+**Robot Operating System (ROS)** "The Robot Operating System (ROS) is a flexible framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robotic platforms." [1](https://www.ros.org/about-ros/) It is not truly an operating system. It is an open-source middle-ware robotics framework that provides services such as hardware abstraction, low-level device control, message passing and package management.
+
+**Gazebo** is an open-source 3D, physics-based robot simulator that interfaces with ROS.
+
+**Differential Drive Robot** is typically a two or four wheeled robot that is driven by controlling the wheel velocities.
+
+**URDF (Universal Robot Description Format)** is a format used to describe physical, visual, collison, transmission properties of a robot. Typically uses XML or XACRO notation.
+
+**Plugin** is a piece of software that can be plugged into an existing software framework. Plugins let users integrate new software functionality without the need to re-compile the whole framework.
+
 ### Setup
 
 After downloading the files, open a terminal and navigate to the project folder ros_gazebo_two_wheel_robot. For example, if the project folder is stored in your home directory, use the command `cd ~/ros_gazebo_two_wheel_robot`.
@@ -56,6 +73,8 @@ After running catkin_make, you should notice two new folders in the root of your
 Now we are ready to work through this unit's lessons.</br></br>
 
 ## Lessons
+
+[Lesson 0 - Creating a Robot Model](./lesson00.md)
 
 [Lesson 1 - Visualizing the robot with rviz](./lesson01.md)
 

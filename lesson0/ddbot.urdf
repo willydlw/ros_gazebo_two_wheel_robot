@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="ddbot">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.5 0.3 0.07"/>
+      </geometry>
+    </visual>
+  </link>
+</robot>

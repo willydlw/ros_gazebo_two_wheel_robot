@@ -106,7 +106,9 @@ Close rviz.
 
 ## Add Color to Model
 
-Add material tags to the model to specify link color. Update the ddbot.urdf file, as shown below. Blue and white material tags are added at the top of the file. The color value range is [0,1]. rgba stands for red, green, blue, alpha. Alpha is the transparency.
+Update the ddbot.urdf file to add material tags. Blue and white material tags are added at the top of the file to define color. The color value range is [0,1]. rgba stands for red, green, blue, alpha. Alpha is the transparency.
+
+Add the blue material to the base_link to change the color to blue. The updated ddbot.urdf file, as shown below.
 
 ```xml
 <?xml version="1.0"?>

@@ -1,16 +1,50 @@
-# Differential Drive Robot Simulation Using ROS and Gazebo
+# Create Two-Wheeled ROS robot in simulation
 
-This learning unit uses ROS (Robot Operating System) features and tools to study the motion behavior of a two wheeled, differential drive, mobile robot.
+Objectives
 
-Objective: model a simple differential drive robot and configure it to navigate autonomously in a simulation environment.
+- Build a URDF model of asimple two-wheeled differential drive robot
+- Specify visualization components so that the model may be viewed in rviz
+- Specify Gazebo simulation components to enable control in a 3D simualtion.
+</br></br>
 
+## Robot Model
 
-Thank and acknowledge
+The robot model consists of link elements, joint elements, and gazebo plugins. A link element is a rigid component. Links are attached to other links via joints. The joint elements specify the relative motion between links. Typically, joints allow for rotation or translation.
 
-The Gazebo, Make a Mobile Robot tutorial, http://gazebosim.org/tutorials/?tut=build_robot, 
+The common properties specified for links and joints are inertial, collision, and visual. Inertial and collision properties enable physics simulation. The visual properties control the robot's appearance.
 
+ROS uses Unified Robot Description Format (URDF) files to specify a robot's properties. URDF supports XML and xacro (XML macro) languages.
 
-The Construct, Exploring ROS using a 2 Wheeled Robot, https://www.theconstructsim.com/ros-projects-exploring-ros-using-2-wheeled-robot-part-1/
+We will build our robot model, step by step, first specifying its visual properties in an XML file. </br></br>
+
+## Create ddbot package
+
+Start by creating a package named ddbot in a catkin workspace with no dependencies. Dependencies will be added later, as needed. Open a terminal and type the following commands.
+
+```bash
+cd ~catkin_ws/src
+catkin_create_pkg ddbot
+```
+
+This will create a /dbot directory with a package.xml file and a CMakeLists.txt.
+
+Next, build the package in the catkin workspace.
+
+```bash
+cd ~/catkin_ws
+catkin_make
+```
+
+</br></br>
+
+Create three new directories in the ddbot package and then navigate to the urdf directory.
+
+```bash
+cd ~/catkin_ws/src/ddbot
+mkdir launch urdf rviz
+cd urdf
+```
+
 </br></br>
 
 
@@ -55,28 +89,24 @@ This project was developed and tested with the following software.
 
 **Plugin** is a piece of software that can be plugged into an existing software framework. Plugins let users integrate new software functionality without the need to re-compile the whole framework.
 
-### Setup
 
-After downloading the files, open a terminal and navigate to the project folder ros_gazebo_two_wheel_robot. For example, if the project folder is stored in your home directory, use the command `cd ~/ros_gazebo_two_wheel_robot`.
-
-Next, we need to build code in the simulation_ws directory with the catkin_make command.
-
-Run the commands below to navigate to the simulation workspace directory, simulation_ws and use the catkin_make tool to build needed project code for the package named m2wr_description.
-
-```bash
-cd simulation_ws
-catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
-```
-
-After running catkin_make, you should notice two new folders in the root of your simulation workspace: the build and devel folders. The build folder is where cmake and make are invoked, and the devel folder contains any generated files and targets, plus setup.*sh files. It also creates a CMakeLists.txt link in the src folder.
-
-Now we are ready to work through this unit's lessons.</br></br>
 
 ## Lessons
 
-[Lesson 0 - Creating a Robot Model](./lesson0/lesson0.md)
+[Lesson 1 - Creating a Robot Model](./lesson1/lesson1.md)
 
-[Lesson 1 - Visualizing the robot with rviz](./lesson1/lesson01.md)
+[Lesson 2 - Visualizing the robot with rviz](./lesson2/lesson2.md)
 
-[Lesson 2 - Simulating robot movement in an empty world](./lesson2/lesson2.md)
+[Lesson 3 - Simulating robot movement in an empty world](./lesson3/lesson3.md)
 
+
+## Acknowledgements
+
+This information was obtained from the following resources.
+
+ROS Robotics By Example - Second Edition
+
+The Gazebo, Make a Mobile Robot tutorial, http://gazebosim.org/tutorials/?tut=build_robot
+
+
+The Construct, Exploring ROS using a 2 Wheeled Robot, https://www.theconstructsim.com/ros-projects-exploring-ros-using-2-wheeled-robot-part-1/

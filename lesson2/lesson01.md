@@ -1,6 +1,42 @@
-# Lesson 1 - Visualizing the robot with rviz
+# Lesson 1 - Adding Wheels to the Robot Model
 
-This lesson illustrates how to visualize the robot model with rviz.</br></br>
+Objectives
+- Build a two-wheeled, differential drive robot model
+   - Link elements for wheels
+   - Joint elements
+   - Gazebo plugin for differential drive
+- Visualize model with rviz
+
+</br></br>
+
+## Robot Model - Add Wheel Links and Joints
+
+We add two link elements to the description, for the right and left wheels. The wheel visual geometry is a cylinder with attributes of length and radius. To better view the wheels, we will color them white. The following description is added to the ddbot.urdf file.  
+
+```xml
+<link name="right_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.3"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+  </link>
+
+  <link name="left_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.3"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+  </link>
+```
+
+</br></br>
+
+We also need to specify where the wheels attach to the base_link. Joint elements are used to create the attachment. A joint can be flexible or inflexible. 
+
 
 ## Robot Model
 

@@ -57,25 +57,7 @@ This project was developed and tested with the following software.
 - Gazebo: 9.0.0
 - Python: 3.6.9
 
-
-#### Simulation Workspace Folder
-    .
-    └── simulation_ws           # Simulation Workspace
-        ├── src                 # Source files 
-        │   ├── m2wr_description       # Robot definition directory
-        |   |   ├── CMakeLists.txt
-        |   |   ├── package.xml
-        |   |   ├── launch              # launch files directory
-        |   |   ├── urdf                # xacro, gazebo files directory
-
-        │   ├── my_worlds               # World definitions
-        │   │   └── ...
-        │   └── ...
-        ├── devel               # Folder created after compilation
-        │   ├── setup.bash      # Shell Script to add environment variables to your path
-        │   └── ...             # etc.
-        └── build               # Compiled files
-    
+</br></br>
 
 ### Terminology
 
@@ -93,11 +75,17 @@ This project was developed and tested with the following software.
 
 ## Lessons
 
-[Lesson 1 - Creating a Robot Model](./lesson1/lesson1.md)
+[Lesson 1 - Build and Visualize Robot Chassis](./lesson1/README.md)
 
-[Lesson 2 - Visualizing the robot with rviz](./lesson2/lesson2.md)
+[Lesson 2 - Adding Wheels to the Robot Model](./lesson2/README.md)
 
-[Lesson 3 - Simulating robot movement in an empty world](./lesson3/lesson3.md)
+[Lesson 3 - Adding Collision Properties](./lesson3/README.md)
+
+[Lesson 4 - Adding inertial properties](./lesson3/README.md)
+
+[Lesson 5 - urdf tools](./lesson3/README.md)
+
+[Lesson 6 - Gazebo](./lesson3/README.md)
 
 
 ## Acknowledgements

@@ -81,20 +81,15 @@ This project was developed and tested with the following software.
 
 [Lesson 3 - Adding Collision Properties](./lesson3/README.md)
 
-[Lesson 4 - Adding inertial properties](./lesson3/README.md)
+[Lesson 4 - Adding inertial properties](./lesson4/README.md)
 
-[Lesson 5 - urdf tools](./lesson3/README.md)
+[Lesson 5 - urdf tools](./lesson5/README.md)
 
-[Lesson 6 - Gazebo](./lesson3/README.md)
+[Lesson 6 - Gazebo](./lesson6/README.md)
+
+[Lesson 7 - Configuring robot model for Gazebo](./lesson7/README.md)
 
 
 ## Acknowledgements
 
-This information was obtained from the following resources.
-
-ROS Robotics By Example - Second Edition
-
-The Gazebo, Make a Mobile Robot tutorial, http://gazebosim.org/tutorials/?tut=build_robot
-
-
-The Construct, Exploring ROS using a 2 Wheeled Robot, https://www.theconstructsim.com/ros-projects-exploring-ros-using-2-wheeled-robot-part-1/
+This information was obtained from the book ROS Robotics By Example - Second Edition
